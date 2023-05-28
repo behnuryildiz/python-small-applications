@@ -1,13 +1,9 @@
 from gtts import gTTS
 import os
 
-#test = "deneme yazisini buraya yaz" veya
-text = input ("MP3 formatinda dönüstürmek istedigin texti buraya yazar misin ?\n")
-
-language = "tr"
+text = input ("Type the text that you want to revert to the MP3 format:\n")
+language = "en"  #for English: en || Turkish: tr || German: de || Spanish: es
 
 speech = gTTS(text= text, lang= language, slow= False)
-
-speech.save("text.mp3")
-
-os.system("start text.mp3")
+speech.save("./fromWrite_toSpeech/revertedText.mp3")
+os.system("start ./fromWrite_toSpeech/revertedText.mp3")
