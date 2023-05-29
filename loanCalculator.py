@@ -3,7 +3,7 @@
 loanedMoney = float(input("How many do you need to load? "))
 howLong = int(input("How long do you need to pay it back ( in years ) ? "))
 interest = 5
-print(f"the interest is for 10 years {interest}%")
+print(f"the interest is for {howLong} years {interest}%")
 
 calculationResultList = []
 for year in range(howLong):
