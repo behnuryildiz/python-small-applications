@@ -56,8 +56,8 @@ while counter1 < 100 and counter2 < 100:
         f"\n\033[2;33mPLAYER 1 SCORE:\t{counter1}👏\nPLAYER 2 SCORE:\t{counter2}👏\n")
   
     if counter1 == 3 or counter2 == 3:
-      exitAsking = input("Game is Over! Do you want to quit the game? Y/N \t")
+      exitAsking = input("Game is Over! Do you want to QUIT the game? Y/N \t")
       if exitAsking.upper() != "Y":
         continue
       else:
-        break
+        exit()
