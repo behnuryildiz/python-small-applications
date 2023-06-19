@@ -49,7 +49,7 @@ while counter1 < 10 and counter2 < 10:
         print("\n", "XXXXXXXXXX"*2, f"\n\033[2;33mYOUR SCORE:\t{counter1}👏\nPC SCORE:\t{counter2}👏\n", "XXXXXXXXXX"*2, "\n")
         
 
-    elif pcOrManually == 2:
+    elif pcOrManually == "2":
         player1 = getpass("\033[02;32mPLAYER 1 >\tWhat is your move?\t")
         player2 = getpass("PLAYER 2 >\tWhat is your move?\t")
         player1 = player1.upper()
